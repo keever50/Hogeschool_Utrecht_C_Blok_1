@@ -1,3 +1,9 @@
+/*
+Naam: Kevin Witteveen
+Programma: Woordzoeker   
+Datum: 13/10/2023
+*/
+
 #include <stdio.h>
 
 int string_size( const char* str )
