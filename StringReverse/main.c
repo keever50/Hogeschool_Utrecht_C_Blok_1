@@ -18,7 +18,7 @@ void show_to_output( const char* str);
 
 int main()
 {
-    char input[INPUT_BUFFER_SIZE];
+    char input[INPUT_BUFFER_SIZE]={0};
     printf("To reverse: ");
     read_input(input, INPUT_BUFFER_SIZE);
     reverse_direct(input);
@@ -40,7 +40,7 @@ void reverse_direct(char* str)
 {
     int len = string_size( str )-1; //-1. We willen geen nul-terminator
     int i;
-    for(i=0;i<(len-i);i++)
+    for(i=0;i<=(len-i);i++)
     {
         char second_char = str[len-i]; //Onthoud de 2e char
         str[len-i]=str[i]; //Vervang 2e char met 1ste
@@ -61,6 +61,7 @@ void read_input(char* buffer, int size)
         }
         buffer[i]=c;
     }
+    buffer[size-1]=0;
 }
 
 void show_to_output( const char* str )
