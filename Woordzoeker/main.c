@@ -56,7 +56,7 @@ int find_str( char* str, const char* ref)
 
 }
 
-char zin[] = "dit is gredeoen en rood niet";
+char zin[] = "dit is groen en rood niet";
 const char ref_string[] = "groen";
 
 int main()
